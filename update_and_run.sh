@@ -6,6 +6,6 @@
 git reset hard
 git pull origin/master
 
-pip3 install -r requrements.txt
+pip3 install -r requirements.txt
 
 python3 client.py
