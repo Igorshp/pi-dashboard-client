@@ -5,7 +5,7 @@ After=network.target
 [Service]
 User=pi
 WorkingDirectory=/home/pi/remote_api
-ExecStart=update_and_run.sh
+ExecStart=/bin/bash update_and_run.sh
 Restart=always
 
 [Install]
