@@ -1,0 +1,12 @@
+[Unit]
+Description=DashboardTvs Remote Api
+After=network.target
+
+[Service]
+User=pi
+WorkingDirectory=/home/pi/remote_api
+ExecStart=update_and_run.sh
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
