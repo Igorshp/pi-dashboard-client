@@ -7,6 +7,11 @@ git reset --hard
 git checkout master
 git pull 
 
-pip3 install -r requirements.txt
+echo "Setting up virtualenv"
+virtualenv --python="$(command -v python3)" .virtualenv 
+source .virtualenv/bin/activate
 
+pip install -r requirements.txt
+
+echo "Running client.py"
 python3 client.py
