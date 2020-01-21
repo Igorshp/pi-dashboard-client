@@ -175,7 +175,7 @@ if __name__ == "__main__":
                 "Failed to connect to chrome remote debugger, waiting for chrome to start",
                 e,
             )
-            time.sleep(1)
+            time.sleep(3)
             continue
     try:
         last_url = load_last_url_from_file()

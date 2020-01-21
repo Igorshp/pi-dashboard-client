@@ -4,7 +4,8 @@
 # it's launched with systemd on the pi to make upgrades easy
 
 git reset --hard
-git pull origin/master
+git checkout master
+git pull 
 
 pip3 install -r requirements.txt
 
